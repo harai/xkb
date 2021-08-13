@@ -84,10 +84,6 @@ xkb_symbols "common" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "henkan" {
-};
-
-partial alphanumeric_keys
 xkb_symbols "OADG109A" {
 
     include "myjp(common)"
