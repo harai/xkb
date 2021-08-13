@@ -1,0 +1,3 @@
+xkb_compatibility "muhenkan" {
+    interpret Muhenkan { action = SetMods(modifiers=Mod5); };
+};
