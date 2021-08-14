@@ -1,0 +1,9 @@
+default xkb_types "complete" {
+    include "mybasic"
+    include "mymousekeys"
+    include "mypc"
+    include "myiso9995"
+    include "mylevel5"
+    include "myextra"
+    include "mynumpad"
+};
