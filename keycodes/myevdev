@@ -65,12 +65,10 @@ default xkb_keycodes "evdev" {
 	<AB10> = 61;
 	<RTSH> = 62;
 
-	//<LALT> = 64;
-	<LVL3> = 64;
+	<LALT> = 64;
 	<LCTL> = 37;
 	<SPCE> = 65;
-	//<RCTL> = 105;
-	<LALT> = 105;
+	<RCTL> = 105;
 	<RALT> = 108;
 	// Microsoft keyboard extra keys
 	<LWIN> = 133;
@@ -287,7 +285,7 @@ default xkb_keycodes "evdev" {
 	<I255> = 255;	// #define KEY_RFKILL              247
 
 	// Fake keycodes for virtual keys
-	//<LVL3> =   92;
+	<LVL3> =   92;
 	<MDSW> =   203;
 	<ALT>  =   204;
 	<META> =   205;

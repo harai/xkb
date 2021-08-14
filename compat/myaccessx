@@ -1,9 +1,3 @@
-default partial xkb_compatibility "basic" {
-    interpret AccessX_Enable {
-	action= LockControls(controls=AccessXKeys);
-    };
-};
-
 partial xkb_compatibility "full" {
 
     interpret AccessX_Enable {
