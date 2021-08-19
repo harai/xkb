@@ -26,8 +26,9 @@ xkb_symbols "pc105" {
     key <LCTL> {	[ Control_L		]	};
     key <LWIN> {	[ Super_L		]	};
 
-    key <RTSH> {	[ Shift_R		]	};
-    key <RCTL> {	[ Control_R		]	};
+    //key <RTSH> {	[ Shift_R		]	};
+    //key <RCTL> {	[ Control_R		]	};
+    key <RCTL> {	[ Alt_L		]	};
     key <RWIN> {	[ Super_R		]	};
     key <MENU> {	[ Menu			]	};
 
@@ -41,10 +42,12 @@ xkb_symbols "pc105" {
     // Fake keys for virtual<->real modifiers mapping:
     key <LVL3> {	[ ISO_Level3_Shift	]	};
     key <MDSW> {	[ Mode_switch 		]	};
-    modifier_map Mod5   { <LVL3>, <MDSW> };
+    //modifier_map Mod5   { <LVL3>, <MDSW> };
+    modifier_map Mod5   { <LVL3>, <MDSW>, ISO_Level3_Shift };
 
     key <ALT>  {	[ NoSymbol, Alt_L	]	};
-    key <LALT> { [ Alt_L, Meta_L ] };
+    //key <LALT> { [ Alt_L, Meta_L ] };
+    key <LALT> { [ ISO_Level3_Shift ] };
     key <RALT> { type[Group1] = "TWO_LEVEL",
                  symbols[Group1] = [ Alt_R, Meta_R ] };
     modifier_map Mod1 { Alt_L, Alt_R, Meta_L, Meta_R };

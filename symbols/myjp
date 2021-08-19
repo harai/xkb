@@ -28,57 +28,78 @@ xkb_symbols "common" {
     key <AE07> { [ 7, apostrophe	] };
     key <AE08> { [ 8, parenleft		] };
     key <AE09> { [ 9, parenright	] };
-    key <AE11> { [ minus, equal		] };
-    key <AE12> { [ asciicircum,	asciitilde] };
+    key <AE11> { [ at, grave		] };
+    key <AE12> { [ bracketleft, braceleft	] };
 
-    key <AD01> { [ q, Q			] };
-    key <AD02> { [ w, W			] };
-    key <AD03> { [ e, E			] };
-    key <AD04> { [ r, R			] };
-    key <AD05> { [ t, T			] };
-    key <AD06> { [ y, Y			] };
-    key <AD07> { [ u, U			] };
-    key <AD08> { [ i, I			] };
-    key <AD09> { [ o, O			] };
-    key <AD10> { [ p, P			] };
-    key <AD11> { [ at, grave		] };
-    key <AD12> { [ bracketleft,	braceleft ] };
+    key <AD01> { [ colon, asterisk	] };
+    key <AD02> { [ comma,  less		] };
+    key <AD03> { [ period, greater	] };
+    key <AD04> { [ p, P			] };
+    key <AD05> { [ y, Y			] };
+    key <AD06> { [ f, F			] };
+    key <AD07> { [ g, G			] };
+    //key <AD08> { [ c, C		] };
+    key <AD09> { [ r, R			] };
+    key <AD10> { [ l, L			] };
+    key <AD11> { [ slash, question	] };
+    key <AD12> { [ asciicircum,  asciitilde	] };
 
-    key <CAPS> { [ Eisu_toggle, Caps_Lock ] };
+    //key <CAPS> { [ Eisu_toggle, Caps_Lock ] };
 
     key <AC01> { [ a, A			] };
-    key <AC02> { [ s, S			] };
-    key <AC03> { [ d, D			] };
-    key <AC04> { [ f, F			] };
-    key <AC05> { [ g, G			] };
-    key <AC06> { [ h, H			] };
-    key <AC07> { [ j, J			] };
-    key <AC08> { [ k, K			] };
-    key <AC09> { [ l, L			] };
-    key <AC10> { [ semicolon, plus	] };
-    key <AC11> { [ colon, asterisk	] };
-    key <AC12> { [ bracketright, braceright ] };
+    key <AC02> { [ o, O			] };
+    key <AC03> { [ e, E			] };
+    key <AC04> { [ u, U			] };
+    key <AC05> { [ i, I			] };
+    key <AC06> { [ d, D			] };
+    //key <AC07> { [ h, H       ] };
+    //key <AC08> { [ t, T       ] };
+    //key <AC09> { [ n, N       ] };
+    key <AC10> { [ s, S			] };
+    key <AC11> { [ minus, equal		] };
+    key <AC12> { [ bracketright, braceright	] };
 
-    key <AB01> { [ z, Z			] };
-    key <AB02> { [ x, X			] };
-    key <AB03> { [ c, C			] };
-    key <AB04> { [ v, V			] };
-    key <AB05> { [ b, B			] };
-    key <AB06> { [ n, N			] };
+    key <AB01> { [ semicolon, plus	] };
+    key <AB02> { [ q, Q			] };
+    key <AB03> { [ j, J			] };
+    key <AB04> { [ k, K			] };
+    key <AB05> { [ x, X			] };
+    key <AB06> { [ b, B			] };
     key <AB07> { [ m, M			] };
-    key <AB08> { [ comma,  less		] };
-    key <AB09> { [ period, greater	] };
-    key <AB10> { [ slash, question	] };
-    key <AB11> { [ backslash, underscore] };
+    key <AB08> { [ w, W			] };
+    key <AB09> { [ v, V			] };
+    key <AB10> { [ z, Z			] };
+    key <AB11> { [ backslash, underscore	] };
     key <LCTL> { [ Control_L		] };
 
-    key <HKTG> {
-	type[Group1]="PC_ALT_LEVEL2",
-	symbols[Group1]= [ Hiragana_Katakana, Romaji ]
+    key <AD08> {
+        type[Group1]= "MYFN_LEVEL3",
+        symbols[Group1]= [ c, C, Up		]
     };
 
+    key <AC07> {
+        type[Group1]= "MYFN_LEVEL3",
+        symbols[Group1]= [ h, H, Left	]
+    };
+
+    key <AC08> {
+        type[Group1]= "MYFN_LEVEL3",
+        symbols[Group1]= [ t, T, Down	]
+    };
+
+    key <AC09> {
+        type[Group1]= "MYFN_LEVEL3",
+        symbols[Group1]= [ n, N, Right	]
+    };
+
+    key <CAPS> { [ Home ] };
+    key <MUHE> { [ BackSpace ] };
+    key <HKTG> { [ Delete	] };
+    key <HENK> { [ Zenkaku_Hankaku ] };
+    key <RTSH> { [ End		] };
+
     key <PRSC> {
-	type[Group1]= "PC_ALT_LEVEL2",
-	symbols[Group1]= [ Print, Execute ]
+	    type[Group1]= "PC_ALT_LEVEL2",
+	    symbols[Group1]= [ Print, Execute ]
     };
 };
