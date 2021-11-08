@@ -81,8 +81,27 @@ xkb_symbols "editing" {
     key  <END> {	[  End			]	};
     key <PGDN> {	[  Next			]	};
 
-    key   <UP> {	[  Up			]	};
-    key <LEFT> {	[  Left			]	};
-    key <DOWN> {	[  Down			]	};
-    key <RGHT> {	[  Right		]	};
+    // key   <UP> {	[  Up			]	};
+    key   <UP> {
+        type[Group1]= "MYFN_LEVEL2",
+        symbols[Group1]= [ Up, KP_8 ]
+    };
+
+    // key <LEFT> {	[  Left			]	};
+    key <LEFT> {
+        type[Group1]= "MYFN_LEVEL2",
+        symbols[Group1]= [ Left, KP_4 ]
+    };
+
+    // key <DOWN> {	[  Down			]	};
+    key <DOWN> {
+        type[Group1]= "MYFN_LEVEL2",
+        symbols[Group1]= [ Down, KP_2 ]
+    };
+
+    // key <RGHT> {	[  Right		]	};
+    key <RGHT> {
+        type[Group1]= "MYFN_LEVEL2",
+        symbols[Group1]= [ Right, KP_6 ]
+    };
 };

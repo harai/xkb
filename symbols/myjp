@@ -93,8 +93,18 @@ xkb_symbols "common" {
     };
 
     key <CAPS> { [ Home ] };
-    key <MUHE> { [ BackSpace ] };
-    key <HKTG> { [ Delete	] };
+    // key <MUHE> { [ BackSpace ] };
+    key <MUHE> {
+        type[Group1]= "MYFN_LEVEL2",
+        symbols[Group1]= [ BackSpace, KP_Subtract ]
+    };
+
+    // key <HKTG> { [ Delete	] };
+    key <HKTG> {
+        type[Group1]= "MYFN_LEVEL2",
+        symbols[Group1]= [ Delete, KP_Add ]
+    };
+
     key <HENK> { [ Zenkaku_Hankaku ] };
     key <RTSH> { [ End		] };
 

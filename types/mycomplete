@@ -7,6 +7,21 @@ default xkb_types "complete" {
     include "myextra"
     include "mynumpad"
 
+    type "MYFN_LEVEL2" {
+        modifiers = Shift+Control+Mod5;
+        map[Mod5] = Level2;
+        map[Mod5+Control] = Level2;
+        map[Mod5+Shift] = Level2;
+        map[Mod5+Shift+Control] = Level2;
+
+        preserve[Mod5+Control] = Control;
+        preserve[Mod5+Shift] = Shift;
+        preserve[Mod5+Shift+Control] = Shift+Control;
+
+        level_name[Level1] = "Base";
+        level_name[Level2] = "ISO_Level3_Shift";
+    };
+
     type "MYFN_LEVEL3" {
         modifiers = Shift+Control+Mod5;
         map[Shift] = Level2;
